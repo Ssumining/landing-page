@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/typography.css" />
+</head>
+<body>
+    <header class="header-container">
+        <h1>
+            <a href="./index.html"><img src="./icons/logo.svg" alt="title-logo"/></a>
+        </h1>
+        <nav class="nav-container">
+            <ul class="link-container">
+                <li><a href="" class="typo-basic-color basic-large-typo">Home</a></li>
+                <li><a href="" class="typo-basic-color basic-large-typo">About</a></li>
+                <li><a href="" class="typo-basic-color basic-large-typo">Support</a></li>
+            </ul>
+            <!-- onclick="location.href'';"" 사용 -> 페이지 이동 -->
+            <button type="button" onclick="" id="download" class="button-typo typo-button-color download-btn">Download</button>
+        </nav>
+    </header>
+    <main>
+        <section class="first-sec-container">
+            <div class="typo-first-container">
+                <h2 class="typo-basic-color emphasis-large-typo">Lorem Ipsum is simply <br>
+                    dummy text of the printing and
+                </h2>
+                <p class="typo-basic-color basic-large-typo">Lorem Ipsum is simply dummy text of the printing and typesetting industry <br>
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+                <!-- onclick="location.href'';"" 사용 -> 페이지 이동 -->
+                <button type="button" onclick="" id="download" class="button-typo typo-button-color download-btn">Download</button>
+            </div>
+            <img src="./images/boxing.png" alt="박스 쓰고 있는 고양이" />
+        </section>
+        <section class="second-sec-container">
+            <img src="./images/lying.png" alt="누워있는 고양이" class="lying-img"/>
+            <div class="typo-second-container">
+                <h2 class="typo-basic-color emphasis-small-typo">Lorem Ipsum is simply <br>
+                    dummy text of the printing <br>
+                    and dummy text</h2>
+                <p class="typo-basic-color basic-large-typo">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+        </section>
+        <section class="third-sec-container">
+            <div class="typo-third-one-container">
+                <h2 class="typo-emphasize-color emphasis-large-typo">dummy text of the printing and dummy</h2>
+                <p class="typo-basic-color basic-large-typo">Lorem Ipsum is simply
+                <strong class="typo-emphasize-color">dummy text</strong> 
+                of the printing and typesetting industry.<br>
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+            </div>
+            <div class="img-third-one-container">
+                <!-- 이미지의 간격이 안 떨어짐-->
+                <img src="./images/hanging.png" alt="기대고 있는 고양이" class="group-img">
+                <img src="./images/behind.png" alt="뒤돌고 있는 고양이" class="group-img">
+                <img src="./images/staring.png" alt="응시하고 있는 고양이" class="group-img">
+            </div>
+            <div class="typo-fourth-one-container">
+                <div>
+                    <p class="typo-basic-color basic-large-typo">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown <br>
+                        Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <!-- onclick="location.href'';"" 사용 -> 페이지 이동 -->
+                <button type="button" onclick="" id="more-page" class="typo-button-color button-typo learn-more-btn">Learn More</button>
+            </div>
+        </section>
+        <section class="fourth-sec-container">
+            <div class="typo-fourth-container">
+                <h3 class="typo-button-color emphasis-small-typo">Subscribe to our Blog post</h3>
+                <p class="typo-button-color basic-small-typo">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
+                Lorem Ipsum has been the industry's standard dummy text</p>
+            </div>
+            <div class="email-subscribe-container">
+                <img src="./icons/email.svg" alt="email-icon"/>
+                <input type="email" name="email" id="email" placeholder="Enter your e-mail address"/>
+                <button type="submit" id="email-address-submit-modal-open-btn" class="typo-button-color email-address-submit-modal-open-btn">Subscribe</button>
+            </div>
+        </section>
+        <img src="./images/eyes-turn.png" alt="눈 돌아있는 고양이">
+        
+        <dialog id="modal-dialog">
+            <img src="./images/modal-background.png" alt="background-page">
+            <div>
+                <img src="./images/modal-cat.png" alt="">
+                <h2>Thank you!</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing industry</p>
+                <button type="button" id="close-btn">OK! I Love HODU</button>
+            </div>
+        </dialog>
+    </main>
+    <footer class="footer-container">
+        <img src="./icons/logo.svg" alt="title-logo">
+        <ul class="icon-container">
+            <li><a href=""><img src="./icons/blog.svg" alt="blog-icon"></a></li>
+            <li><a href=""><img src="./icons/insta.svg" alt="insta-icon"></a></li>
+            <li><a href=""><img src="./icons/facebook.svg" alt="facebook-icon"></a></li>
+            <li><a href=""><img src="./icons/youtube.svg" alt="youtube-icon"></a></li>
+        </ul>
+        <!--모바일 반응형일때 나타남-->
+        <ul class="mobile-container">
+            <li><a href="">About</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Support</a></li>
+            <li><a href="">Terms of Use</a></li>
+        </ul>
+    </footer>
+</body>
+<script>
+    const dialog = document.getElementById('modal-dialog');
+    const showDialogBtn = document.getElementById('email-address-submit-modal-open-btn');
+    const closeBtn = document.getElementById('close-btn');
+    
+    showDialogBtn.addEventListener('click', () => {
+        dialog.showModal();
+    });
+    
+    closeBtn.addEventListener('click', () => {
+        dialog.close();
+    });
+</script>
+</html>

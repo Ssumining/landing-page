@@ -1,0 +1,85 @@
+/* Thin */
+@font-face {
+    font-family: 'SpokaHanSansNeo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Thin.woff') format('woff');
+    font-weight: 100;
+    font-display: swap;
+}
+
+/* Light */
+@font-face {
+    font-family: 'SpokaHanSansNeo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+
+/* Regular */
+@font-face {
+    font-family: 'SpokaHanSansNeo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* Medium */
+@font-face {
+    font-family: 'SpokaHanSansNeo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'SpokaHanSansNeo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
+:root {
+    --font-size-48: 48px;
+    --font-size-36: 36px;
+    --font-size-16: 16px;
+    --font-size-14: 14px;
+
+    --font-weight-regular: normal;
+    --font-weight-bold: Bold;
+}
+
+.basic-large-typo {
+    font-family: 'SpokaHanSansNeo', sans-serif;
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-regular);
+}
+
+.basic-small-typo {
+    font-family: 'SpokaHanSansNeo', sans-serif;
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-regular);
+}
+
+.button-typo {
+    font-family: 'SpokaHanSansNeo', sans-serif;
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-bold);
+}
+
+/* .button-auto-typo {
+    font-family: 'SpokaHanSansNeo', sans-serif;
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-bold);
+} */
+
+.emphasis-large-typo {
+    font-family: 'SpokaHanSansNeo', sans-serif;
+    font-size: var(--font-size-48);
+    font-weight: var(--font-weight-bold);
+}
+
+.emphasis-small-typo {
+    font-family: 'SpokaHanSansNeo', sans-serif;
+    font-size: var(--font-size-36);
+    font-weight: var(--font-weight-bold);
+}
